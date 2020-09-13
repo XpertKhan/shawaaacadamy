@@ -1,0 +1,6 @@
+D:\Shawaa\Shawaa\BAL\bin\Debug\BAL.dll
+D:\Shawaa\Shawaa\BAL\bin\Debug\BAL.pdb
+D:\Shawaa\Shawaa\BAL\obj\Debug\BAL.csprojAssemblyReference.cache
+D:\Shawaa\Shawaa\BAL\obj\Debug\BAL.csproj.CoreCompileInputs.cache
+D:\Shawaa\Shawaa\BAL\obj\Debug\BAL.dll
+D:\Shawaa\Shawaa\BAL\obj\Debug\BAL.pdb

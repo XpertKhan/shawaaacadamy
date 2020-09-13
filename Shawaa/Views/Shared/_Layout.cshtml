@@ -132,7 +132,7 @@
                         <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
                     </div>
                 </li>
-                
+
             </ul>
         </nav>
         <!-- /.navbar -->
@@ -167,17 +167,17 @@
                                 <i class="nav-icon"></i>
                                 <p>
                                     Dashboard
-                                     
+
                                 </p>
                             </a>
-                           
+
                         </li>
                         <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
+                            <a href="@Url.Action("Index","Class")" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Classes
-                                  
+
                                 </p>
                             </a>
                         </li>
@@ -186,30 +186,30 @@
                                 <i class="nav-icon fas fa-copy"></i>
                                 <p>
                                     Instructor
-                                    
+
                                 </p>
                             </a>
-                      
+
                         </li>
                         <li class="nav-item">
                             <a href="javascript:void(0)" class="nav-link">
                                 <i class="nav-icon fas fa-chart-pie"></i>
                                 <p>
                                     Students
-                                    
+
                                 </p>
                             </a>
-                        
+
                         </li>
                         <li class="nav-item has-treeview">
                             <a href="javascript:void(0)" class="nav-link">
                                 <i class="nav-icon fas fa-tree"></i>
                                 <p>
                                     Attendance
-                                   
+
                                 </p>
                             </a>
-                          
+
                         </li>
                         <li class="nav-item has-treeview">
                             <a href="javascript:void(0)" class="nav-link">
@@ -238,7 +238,7 @@
                                         <p>By Student</p>
                                     </a>
                                 </li>
-                               
+
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -246,13 +246,13 @@
                                 <i class="nav-icon fas fa-table"></i>
                                 <p>
                                     Admin
-                                     
+
                                 </p>
                             </a>
-                           
+
                         </li>
-                       
-                      
+
+
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
@@ -262,7 +262,7 @@
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            
+
             <!-- Content Header (Page header) -->
             <div class="content-header">
                 <div class="container-fluid">
@@ -278,21 +278,41 @@
             <!-- Main content -->
             <section class="content">
                 <div class="container-fluid">
-                @RenderBody()
+                    @RenderBody()
                 </div><!--/. container-fluid -->
             </section>
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
         <!-- Control Sidebar -->
-        
         <!-- /.control-sidebar -->
         <!-- Main Footer -->
         <footer class="main-footer">
             <strong>Copyright &copy; 2014-2019 <a href="http:shawaa.somee.com">Shawaa</a>.</strong>
             All rights reserved.
-          
+
         </footer>
+    </div>
+    <div class="modal fade" id="modal-lg" aria-modal="true" style="padding-right: 17px;display: block;">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Large Modal</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body…</p>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
     </div>
     <!-- ./wrapper -->
     <!-- REQUIRED SCRIPTS -->

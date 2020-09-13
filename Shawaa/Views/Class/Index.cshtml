@@ -1,0 +1,137 @@
+﻿@model IEnumerable<DTO.ShawaaClass>
+
+@{
+   // ViewBag.Title = "Class";
+}
+
+ 
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Class</h3>
+
+                <div class="card-tools">
+                    <div class="input-group input-group-sm" style="width: 150px;">
+                        <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body table-responsive p-0" style="height: 300px;">
+               
+
+                    <table class="table table-head-fixed text-nowrap">
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ClassId)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ClassName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ClassStartTime)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ClassEndTime)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ClassStartDate)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ClassEndDate)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.CreatedDate)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.CreatedBy)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.IsDeleted)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.DeletedDate)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.DeletedBy)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.UpdatedDate)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.UpdatedBy)
+                            </th>
+                            <th></th>
+                        </tr>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ClassId)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ClassName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ClassStartTime)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ClassEndTime)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ClassStartDate)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ClassEndDate)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.CreatedDate)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.CreatedBy)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.IsDeleted)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DeletedDate)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DeletedBy)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.UpdatedDate)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.UpdatedBy)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                                </td>
+                            </tr>
+                        }
+
+                    </table>
+                
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+    </div>
+</div>

@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿
+using DAL;
 using System.Web.Mvc;
+ 
 
 namespace Shawaa.Controllers
 {
@@ -10,8 +9,9 @@ namespace Shawaa.Controllers
     {
         public ActionResult Index()
         {
+            ClassRepository _repo = new ClassRepository();
             ViewBag.Title = "Dashboard";
-
+            var da = _repo.GetAll();
             return View();
         }
     }

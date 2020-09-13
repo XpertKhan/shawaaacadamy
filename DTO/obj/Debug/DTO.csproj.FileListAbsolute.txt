@@ -1,0 +1,6 @@
+D:\Shawaa\Shawaa\DTO\bin\Debug\DTO.dll
+D:\Shawaa\Shawaa\DTO\bin\Debug\DTO.pdb
+D:\Shawaa\Shawaa\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Shawaa\Shawaa\DTO\obj\Debug\DTO.dll
+D:\Shawaa\Shawaa\DTO\obj\Debug\DTO.pdb
+D:\Shawaa\Shawaa\DTO\obj\Debug\DTO.csprojAssemblyReference.cache

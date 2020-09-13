@@ -1,0 +1,11 @@
+D:\Shawaa\Shawaa\DAL\bin\Debug\DAL.dll
+D:\Shawaa\Shawaa\DAL\bin\Debug\DAL.pdb
+D:\Shawaa\Shawaa\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\Shawaa\Shawaa\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Shawaa\Shawaa\DAL\obj\Debug\DAL.dll
+D:\Shawaa\Shawaa\DAL\obj\Debug\DAL.pdb
+D:\Shawaa\Shawaa\DAL\bin\Debug\Dapper.dll
+D:\Shawaa\Shawaa\DAL\bin\Debug\Dapper.xml
+D:\Shawaa\Shawaa\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Shawaa\Shawaa\DAL\bin\Debug\DTO.dll
+D:\Shawaa\Shawaa\DAL\bin\Debug\DTO.pdb

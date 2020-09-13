@@ -75,8 +75,14 @@ D:\Shawaa\Shawaa\Shawaa\bin\System.Web.WebPages.Deployment.xml
 D:\Shawaa\Shawaa\Shawaa\bin\System.Web.WebPages.Razor.xml
 D:\Shawaa\Shawaa\Shawaa\bin\Antlr3.Runtime.pdb
 D:\Shawaa\Shawaa\Shawaa\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Shawaa\Shawaa\Shawaa\obj\Debug\Shawaa.csprojAssemblyReference.cache
 D:\Shawaa\Shawaa\Shawaa\obj\Debug\Shawaa.csproj.CoreCompileInputs.cache
 D:\Shawaa\Shawaa\Shawaa\obj\Debug\Shawaa.csproj.CopyComplete
 D:\Shawaa\Shawaa\Shawaa\obj\Debug\Shawaa.dll
 D:\Shawaa\Shawaa\Shawaa\obj\Debug\Shawaa.pdb
-D:\Shawaa\Shawaa\Shawaa\obj\Debug\Shawaa.csprojAssemblyReference.cache
+D:\Shawaa\Shawaa\Shawaa\bin\DAL.dll
+D:\Shawaa\Shawaa\Shawaa\bin\Dapper.dll
+D:\Shawaa\Shawaa\Shawaa\bin\DAL.pdb
+D:\Shawaa\Shawaa\Shawaa\bin\Dapper.xml
+D:\Shawaa\Shawaa\Shawaa\bin\DTO.dll
+D:\Shawaa\Shawaa\Shawaa\bin\DTO.pdb

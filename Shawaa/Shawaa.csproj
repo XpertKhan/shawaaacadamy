@@ -47,6 +47,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DAL">
+      <HintPath>..\DAL\bin\Debug\DAL.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -129,34 +132,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
-    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
-    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
-    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs" />
-    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
-    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\ClassController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -165,7 +141,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -182,7 +157,6 @@
     <Content Include="dist\css\alt\adminlte.pages.min.css" />
     <Content Include="dist\css\alt\adminlte.plugins.css" />
     <Content Include="dist\css\alt\adminlte.plugins.min.css" />
-    <Content Include="dist\img\AdminLTELogo.png" />
     <Content Include="dist\img\avatar.png" />
     <Content Include="dist\img\avatar04.png" />
     <Content Include="dist\img\avatar2.png" />
@@ -220,9 +194,7 @@
     <Content Include="dist\js\adminlte.js" />
     <Content Include="dist\js\adminlte.min.js" />
     <Content Include="dist\js\demo.js" />
-    <Content Include="dist\js\pages\dashboard.js" />
     <Content Include="dist\js\pages\dashboard2.js" />
-    <Content Include="dist\js\pages\dashboard3.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -1853,25 +1825,6 @@
     <Content Include="plugins\toastr\toastr.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Areas\HelpPage\Views\Web.config" />
-    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="plugins\.npmignore" />
     <Content Include="plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.css.map" />
     <Content Include="plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.min.css.map" />
@@ -1959,6 +1912,8 @@
     <Content Include="dist\css\alt\adminlte.plugins.min.css.map" />
     <Content Include="dist\js\adminlte.js.map" />
     <Content Include="dist\js\adminlte.min.js.map" />
+    <Content Include="libman.json" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -1972,18 +1927,29 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Class\Index.cshtml" />
+    <Content Include="Views\Class\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="NewFolder1\" />
+    <Folder Include="plugins\filterizr\config\" />
+    <Folder Include="plugins\filterizr\FilterContainer\" />
+    <Folder Include="plugins\filterizr\FilterItems\" />
+    <Folder Include="plugins\filterizr\FilterItem\" />
+    <Folder Include="plugins\filterizr\FilterizrOptions\" />
+    <Folder Include="plugins\filterizr\Filterizr\" />
+    <Folder Include="plugins\filterizr\layouts\" />
+    <Folder Include="plugins\filterizr\makeLayoutPositions\" />
+    <Folder Include="plugins\filterizr\Spinner\" />
+    <Folder Include="plugins\filterizr\types\interfaces\" />
+    <Folder Include="plugins\filterizr\utils\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -2015,99 +1981,13 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="plugins\filterizr\ActiveFilter.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\animate.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\BrowserWindow.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\config\cssEasingValuesRegexp.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\config\filterizrState.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\config\index.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\config\layout.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\EventReceiver.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\FilterContainer.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\FilterContainer\FilterContainer.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\FilterContainer\index.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\FilterContainer\StyledFilterContainer.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\FilterContainer\styles.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\FilterControls.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\FilterItem.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\FilterItems.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\FilterItems\FilterItems.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\FilterItems\index.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\FilterItems\StyledFilterItems.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\FilterItem\FilterItem.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\FilterItem\index.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\FilterItem\StyledFilterItem.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\FilterItem\styles.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\Filterizr.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\FilterizrElement.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\FilterizrOptions\defaultOptions.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\FilterizrOptions\FilterizrOptions.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\FilterizrOptions\index.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\Filterizr\Filterizr.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\Filterizr\index.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\Filterizr\installAsJQueryPlugin.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\getLayoutPositions.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\index.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\index.jquery.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\installAsJQueryPlugin.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\layouts\getHorizontalLayoutPositions.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\layouts\getPackedLayoutPositions.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\layouts\getSameHeightLayoutPositions.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\layouts\getSameSizeLayoutPosition.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\layouts\getSameWidthLayoutPositions.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\layouts\getVerticalLayoutPositions.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\layouts\Packer.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\makeLayoutPositions\index.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\makeLayoutPositions\makeHorizontalLayoutPositions.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\makeLayoutPositions\makeLayoutPositions.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\makeLayoutPositions\makePackedLayoutPositions.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\makeLayoutPositions\makeSameHeightLayoutPositions.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\makeLayoutPositions\makeSameSizeLayoutPosition.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\makeLayoutPositions\makeSameWidthLayoutPositions.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\makeLayoutPositions\makeVerticalLayoutPositions.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\makeLayoutPositions\Packer.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\Spinner\index.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\Spinner\makeSpinner.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\Spinner\Spinner.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\Spinner\StyledSpinner.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\StyledFilterizrElement.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\StyledFilterizrElements.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\types\index.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\types\interfaces\BaseOptions.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\types\interfaces\ContainerLayout.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\types\interfaces\Destructible.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\types\interfaces\Dictionary.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\types\interfaces\Dimensions.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\types\interfaces\index.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\types\interfaces\Options.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\types\interfaces\Position.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\types\interfaces\RawOptions.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\types\interfaces\RawOptionsCallbacks.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\types\interfaces\Resizable.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\types\interfaces\SpinnerOptions.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\types\interfaces\Styleable.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\utils.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\utils\allStringsOfArray1InArray2.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\utils\checkOptionForErrors.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\utils\debounce.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\utils\filterItemArraysHaveSameSorting.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\utils\getDataAttributesOfHTMLNode.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\utils\getHTMLElement.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\utils\index.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\utils\intersection.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\utils\merge.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\utils\noop.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\utils\setStyles.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\utils\shuffle.d.ts" />
-    <TypeScriptCompile Include="plugins\filterizr\utils\sortBy.d.ts" />
-    <TypeScriptCompile Include="plugins\fullcalendar-bootstrap\main.d.ts" />
-    <TypeScriptCompile Include="plugins\fullcalendar-daygrid\main.d.ts" />
-    <TypeScriptCompile Include="plugins\fullcalendar-interaction\main.d.ts" />
-    <TypeScriptCompile Include="plugins\fullcalendar-timegrid\main.d.ts" />
-    <TypeScriptCompile Include="plugins\fullcalendar\main.d.ts" />
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{5c1e77ac-0f0a-49ef-a215-c84baf49c7a2}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
